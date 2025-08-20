@@ -1,0 +1,204 @@
+/* Importar una fuente amigable para niños de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap');
+
+/* Estilos generales */
+body {
+    font-family: 'Fredoka', sans-serif;
+    margin: 0;
+    background-color: #f7f3e9; /* Fondo crema suave */
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Encabezado */
+.header {
+    background-color: #ff6f61; /* Rojo coral brillante */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Sección de video */
+.video-section {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #97d8c4; /* Verde menta */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-section h2 {
+    color: #00796b; /* Verde oscuro */
+    margin-top: 0;
+    font-size: 2.5em;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    height: 0;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 5px dashed #ffb400; /* Borde amarillo con puntos */
+}
+
+.video-wrapper iframe,
+.video-wrapper p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-size: 1.5em;
+    color: #666;
+}
+
+/* Sección de contenido y tarjetas */
+.content-section {
+    padding: 20px;
+}
+
+.content-section h2 {
+    text-align: center;
+    color: #ff6f61;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: #ffb400; /* Amarillo vibrante */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 300px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    color: #fff;
+    font-size: 1.8em;
+    margin-top: 0;
+}
+
+.card p {
+    color: #333;
+}
+
+/* Pie de página */
+.footer {
+    background-color: #ff6f61;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+p {
+ text-align: justify;
+}
+        nav ul{
+    list-style: none;
+    padding: 0;
+}
+
+nav li{
+    line-height: 2.5rem;
+    position: relative;
+}
+
+.menu ul{
+    position: absolute;
+}
+
+nav a{
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    transition: .4s;
+    padding: 10px 20px;
+}
+
+nav a:hover{
+    background: rgba(15, 15, 15, 0.5);
+}
+
+nav li ul{
+    float:center;
+    font-size: 17px;
+}
+
+
+/*menu parte primer nivel*/
+.menu{
+    background: #e78719;
+    display: table;
+    height: auto;
+}
+
+.menu >li{
+    float: left;
+}
+
+/*menu parte segundo nivel*/
+nav li li{
+    background: #fc590e86;
+    max-height: 0;
+    overflow: hidden;
+    transition: all .1s;
+    width: 155px;
+}
+
+nav li:hover > ul > li{
+   max-height: 500px;
+   overflow: visible; 
+}
+
+.menu > li > ul{
+top:100%;
+}
+
+/*menu parte tercer nivel*/
+.menu ul ul{
+left:100%; 
+top: 0;
+}
+   
+@media (max-width: 768px) {
+form {
+ padding: 10px;
+}
+
+input, select, textarea, button {
+font-size: 14px;
+}
+}

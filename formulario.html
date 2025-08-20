@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Acceso</title>
+    <link rel="stylesheet" href="css/styleformulario.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-container" id="login-form">
+            <h2>Iniciar Sesión</h2>
+            <form action="#" method="post">
+                <div class="input-group">
+                    <label for="login-email">Correo Electrónico</label>
+                    <input type="email" id="login-email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="login-password">Contraseña</label>
+                    <input type="password" id="login-password" name="password" required>
+                </div>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+            <p>¿No tienes cuenta? <a href="#" id="show-register">Regístrate aquí</a></p>
+        </div>
+
+        <div class="form-container hidden" id="register-form">
+            <h2>Crear una Cuenta</h2>
+            <form action="#" method="post">
+                <div class="input-group">
+                    <label for="register-name">Nombre Completo</label>
+                    <input type="text" id="register-name" name="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="register-email">Correo Electrónico</label>
+                    <input type="email" id="register-email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="register-dob">Fecha de Nacimiento</label>
+                    <input type="date" id="register-dob" name="dob" required>
+                </div>
+                <div class="input-group">
+                    <label for="register-password">Contraseña</label>
+                    <input type="password" id="register-password" name="password" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="category">Categoría</label>
+                    <select id="category" name="category" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="mujer">Organización de la Mujer</option>
+                        <option value="ninez">Organización de la Niñez</option>
+                    </select>
+                </div>
+
+                <div class="input-group hidden" id="mujer-orgs">
+                    <label for="mujer-org">Organización de la Mujer</label>
+                    <select id="mujer-org" name="mujer_org">
+                        <option value="">Selecciona una organización</option>
+                        <option value="org1">Organización 1 (Mujer)</option>
+                        <option value="org2">Organización 2 (Mujer)</option>
+                        <option value="org3">Organización 3 (Mujer)</option>
+                    </select>
+                </div>
+
+                <div class="input-group hidden" id="ninez-orgs">
+                    <label for="ninez-org">Organización de la Niñez</label>
+                    <select id="ninez-org" name="ninez_org">
+                        <option value="">Selecciona una organización</option>
+                        <option value="org-a">Organización A (Niñez)</option>
+                        <option value="org-b">Organización B (Niñez)</option>
+                        <option value="org-c">Organización C (Niñez)</option>
+                    </select>
+                </div>
+                
+                <button type="submit">Crear Cuenta</button>
+            </form>
+            <p>¿Ya tienes cuenta? <a href="#" id="show-login">Inicia sesión</a></p>
+        </div>
+    </div>
+
+    <script src="java/formulario.js"></script>
+</body>
+</html>
